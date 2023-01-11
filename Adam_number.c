@@ -9,14 +9,12 @@ int main()
         c=i%10;
         s=s*10+c;
     }
-    //printf("%d",s);
     d=s*s;
     for(j=d;j>0;j=j/10)
     {
         x=j%10;
         y=y*10+x;
     }
-    //printf("%d",y);
     if(y==b)
     {
         printf("True");
