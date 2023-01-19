@@ -9,6 +9,7 @@ int main()
         c=i%10;
         s=s*10+c;
     }
+    //printf("%d",s);
     d=s*s;
     for(j=d;j>0;j=j/10)
     {
