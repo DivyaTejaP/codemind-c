@@ -1,28 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,b,d,s=0,m=0,k=0;
+    int a[100],n,i,b,d,r,c=0,j,k=0;
     scanf("%d",&n);
-    int a[n];
     for(i=0;i<n;i++)
     {
-        k++;
         scanf("%d",&a[i]);
-        if(a[i]%2==0)
-        {
-            s++;
-        }
-        else if(a[i]%2!=0)
-        {
-            m++;
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2==0){
+            c++;
         }
     }
-        if(s==k)
-        {
-            printf("True");
-        }
-        else
-        {
-            printf("False");
-        }
+    if(c==n){
+        printf("True");
+    }
+    else{
+        printf("False");
+    }
 }
